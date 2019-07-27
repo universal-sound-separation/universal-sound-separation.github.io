@@ -1,0 +1,1130 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Audio Demos for 3-Source Universal Sound Separation
+</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+  <p>&nbsp;</p>
+  <p><span class="title">Audio Demos for 3-Source Universal Sound Separation</span></p>
+  <br />
+  <p><span class="section">Jail door + auto crash + morse code</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Jail_door_+_auto_crash_+_morse_code_mix.png" width="300" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Jail_door_+_auto_crash_+_morse_code_mix.wav"></audio>
+      </td>
+    </tr>
+
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+
+
+        <td align="center">
+          <img src="images/Jail_door_+_auto_crash_+_morse_code_src0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Jail_door_+_auto_crash_+_morse_code_src0.wav"></audio>
+
+        <br />
+          SI-SDR = -0.07 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Jail_door_+_auto_crash_+_morse_code_src1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Jail_door_+_auto_crash_+_morse_code_src1.wav"></audio>
+
+        <br />
+          SI-SDR = -2.91 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Jail_door_+_auto_crash_+_morse_code_src2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Jail_door_+_auto_crash_+_morse_code_src2.wav"></audio>
+
+        <br />
+          SI-SDR = -7.31 dB
+        </td>  </tr>
+      <tr>
+        <th>Method</th>
+
+        <th>Separated source 0</th>
+
+        <th>Separated source 1</th>
+
+        <th>Separated source 2</th>
+
+    </tr>
+
+      <tr>
+        <td align="center">iTDCN++ 2.5ms STFT</td>
+
+        <td align="center">
+          <img src="images/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_STFT_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_STFT_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = 1.96 dB
+          </td>
+        <td align="center">
+          <img src="images/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_STFT_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_STFT_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 2.36 dB
+          </td>
+        <td align="center">
+          <img src="images/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_STFT_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_STFT_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = -13.98 dB
+          </td>
+      <tr>
+        <td align="center">iTDCN++ 2.5ms learned</td>
+
+        <td align="center">
+          <img src="images/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_learned_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_learned_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = 1.84 dB
+          </td>
+        <td align="center">
+          <img src="images/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_learned_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_learned_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 0.12 dB
+          </td>
+        <td align="center">
+          <img src="images/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_learned_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Jail_door_+_auto_crash_+_morse_code_iTDCN++_2.5ms_learned_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = -32.22 dB
+          </td>  </tr>
+  </table>
+
+
+  <p><span class="section">Dice roll + phone hangups + bottle pour</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Dice_roll_+_phone_hangups_+_bottle_pour_mix.png" width="300" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Dice_roll_+_phone_hangups_+_bottle_pour_mix.wav"></audio>
+      </td>
+    </tr>
+
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+
+
+        <td align="center">
+          <img src="images/Dice_roll_+_phone_hangups_+_bottle_pour_src0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Dice_roll_+_phone_hangups_+_bottle_pour_src0.wav"></audio>
+
+        <br />
+          SI-SDR = 1.89 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Dice_roll_+_phone_hangups_+_bottle_pour_src1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Dice_roll_+_phone_hangups_+_bottle_pour_src1.wav"></audio>
+
+        <br />
+          SI-SDR = -2.35 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Dice_roll_+_phone_hangups_+_bottle_pour_src2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Dice_roll_+_phone_hangups_+_bottle_pour_src2.wav"></audio>
+
+        <br />
+          SI-SDR = -15.30 dB
+        </td>  </tr>
+      <tr>
+        <th>Method</th>
+
+        <th>Separated source 0</th>
+
+        <th>Separated source 1</th>
+
+        <th>Separated source 2</th>
+
+    </tr>
+
+      <tr>
+        <td align="center">iTDCN++ 2.5ms STFT</td>
+
+        <td align="center">
+          <img src="images/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_STFT_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_STFT_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = 15.83 dB
+          </td>
+        <td align="center">
+          <img src="images/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_STFT_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_STFT_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 14.23 dB
+          </td>
+        <td align="center">
+          <img src="images/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_STFT_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_STFT_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 7.14 dB
+          </td>
+      <tr>
+        <td align="center">iTDCN++ 2.5ms learned</td>
+
+        <td align="center">
+          <img src="images/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_learned_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_learned_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = 14.30 dB
+          </td>
+        <td align="center">
+          <img src="images/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_learned_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_learned_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 13.78 dB
+          </td>
+        <td align="center">
+          <img src="images/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_learned_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Dice_roll_+_phone_hangups_+_bottle_pour_iTDCN++_2.5ms_learned_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 8.94 dB
+          </td>  </tr>
+  </table>
+
+
+  <p><span class="section">Rocks on shale + metal can on concrete + metal door slams</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_mix.png" width="300" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_mix.wav"></audio>
+      </td>
+    </tr>
+
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+
+
+        <td align="center">
+          <img src="images/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_src0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_src0.wav"></audio>
+
+        <br />
+          SI-SDR = -27.44 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_src1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_src1.wav"></audio>
+
+        <br />
+          SI-SDR = -0.86 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_src2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_src2.wav"></audio>
+
+        <br />
+          SI-SDR = 1.16 dB
+        </td>  </tr>
+      <tr>
+        <th>Method</th>
+
+        <th>Separated source 0</th>
+
+        <th>Separated source 1</th>
+
+        <th>Separated source 2</th>
+
+    </tr>
+
+      <tr>
+        <td align="center">iTDCN++ 2.5ms STFT</td>
+
+        <td align="center">
+          <img src="images/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_STFT_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_STFT_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = -3.89 dB
+          </td>
+        <td align="center">
+          <img src="images/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_STFT_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_STFT_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 5.42 dB
+          </td>
+        <td align="center">
+          <img src="images/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_STFT_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_STFT_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 7.19 dB
+          </td>
+      <tr>
+        <td align="center">iTDCN++ 2.5ms learned</td>
+
+        <td align="center">
+          <img src="images/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_learned_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_learned_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = -6.61 dB
+          </td>
+        <td align="center">
+          <img src="images/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_learned_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_learned_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 8.18 dB
+          </td>
+        <td align="center">
+          <img src="images/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_learned_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Rocks_on_shale_+_metal_can_on_concrete_+_metal_door_slams_iTDCN++_2.5ms_learned_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 9.22 dB
+          </td>  </tr>
+  </table>
+
+
+  <p><span class="section">Insect chitter + game piece moves + rocks on dirt</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_mix.png" width="300" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_mix.wav"></audio>
+      </td>
+    </tr>
+
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+
+
+        <td align="center">
+          <img src="images/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_src0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_src0.wav"></audio>
+
+        <br />
+          SI-SDR = -0.18 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_src1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_src1.wav"></audio>
+
+        <br />
+          SI-SDR = -11.06 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_src2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_src2.wav"></audio>
+
+        <br />
+          SI-SDR = -1.07 dB
+        </td>  </tr>
+      <tr>
+        <th>Method</th>
+
+        <th>Separated source 0</th>
+
+        <th>Separated source 1</th>
+
+        <th>Separated source 2</th>
+
+    </tr>
+
+      <tr>
+        <td align="center">iTDCN++ 2.5ms STFT</td>
+
+        <td align="center">
+          <img src="images/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_STFT_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_STFT_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = 9.53 dB
+          </td>
+        <td align="center">
+          <img src="images/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_STFT_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_STFT_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = -10.17 dB
+          </td>
+        <td align="center">
+          <img src="images/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_STFT_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_STFT_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 10.05 dB
+          </td>
+      <tr>
+        <td align="center">iTDCN++ 2.5ms learned</td>
+
+        <td align="center">
+          <img src="images/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_learned_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_learned_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = 8.98 dB
+          </td>
+        <td align="center">
+          <img src="images/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_learned_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_learned_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = -11.07 dB
+          </td>
+        <td align="center">
+          <img src="images/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_learned_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Insect_chitter_+_game_piece_moves_+_rocks_on_dirt_iTDCN++_2.5ms_learned_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 12.11 dB
+          </td>  </tr>
+  </table>
+
+
+  <p><span class="section">Water splash + ice water pour + door open</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Water_splash_+_ice_water_pour_+_door_open_mix.png" width="300" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Water_splash_+_ice_water_pour_+_door_open_mix.wav"></audio>
+      </td>
+    </tr>
+
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+
+
+        <td align="center">
+          <img src="images/Water_splash_+_ice_water_pour_+_door_open_src0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Water_splash_+_ice_water_pour_+_door_open_src0.wav"></audio>
+
+        <br />
+          SI-SDR = 2.88 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Water_splash_+_ice_water_pour_+_door_open_src1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Water_splash_+_ice_water_pour_+_door_open_src1.wav"></audio>
+
+        <br />
+          SI-SDR = -3.79 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Water_splash_+_ice_water_pour_+_door_open_src2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Water_splash_+_ice_water_pour_+_door_open_src2.wav"></audio>
+
+        <br />
+          SI-SDR = -13.30 dB
+        </td>  </tr>
+      <tr>
+        <th>Method</th>
+
+        <th>Separated source 0</th>
+
+        <th>Separated source 1</th>
+
+        <th>Separated source 2</th>
+
+    </tr>
+
+      <tr>
+        <td align="center">iTDCN++ 2.5ms STFT</td>
+
+        <td align="center">
+          <img src="images/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_STFT_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_STFT_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = 7.44 dB
+          </td>
+        <td align="center">
+          <img src="images/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_STFT_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_STFT_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 6.06 dB
+          </td>
+        <td align="center">
+          <img src="images/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_STFT_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_STFT_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = -9.43 dB
+          </td>
+      <tr>
+        <td align="center">iTDCN++ 2.5ms learned</td>
+
+        <td align="center">
+          <img src="images/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_learned_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_learned_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = 3.38 dB
+          </td>
+        <td align="center">
+          <img src="images/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_learned_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_learned_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 1.25 dB
+          </td>
+        <td align="center">
+          <img src="images/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_learned_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Water_splash_+_ice_water_pour_+_door_open_iTDCN++_2.5ms_learned_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = -20.04 dB
+          </td>  </tr>
+  </table>
+
+
+  <p><span class="section">Sheet metal on concrete + ceramic debris + cordless drill</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_mix.png" width="300" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_mix.wav"></audio>
+      </td>
+    </tr>
+
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+
+
+        <td align="center">
+          <img src="images/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_src0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_src0.wav"></audio>
+
+        <br />
+          SI-SDR = -3.82 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_src1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_src1.wav"></audio>
+
+        <br />
+          SI-SDR = -1.43 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_src2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_src2.wav"></audio>
+
+        <br />
+          SI-SDR = -4.04 dB
+        </td>  </tr>
+      <tr>
+        <th>Method</th>
+
+        <th>Separated source 0</th>
+
+        <th>Separated source 1</th>
+
+        <th>Separated source 2</th>
+
+    </tr>
+
+      <tr>
+        <td align="center">iTDCN++ 2.5ms STFT</td>
+
+        <td align="center">
+          <img src="images/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_STFT_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_STFT_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = 3.55 dB
+          </td>
+        <td align="center">
+          <img src="images/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_STFT_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_STFT_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 0.91 dB
+          </td>
+        <td align="center">
+          <img src="images/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_STFT_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_STFT_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = -1.79 dB
+          </td>
+      <tr>
+        <td align="center">iTDCN++ 2.5ms learned</td>
+
+        <td align="center">
+          <img src="images/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_learned_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_learned_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = 2.38 dB
+          </td>
+        <td align="center">
+          <img src="images/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_learned_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_learned_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = -4.53 dB
+          </td>
+        <td align="center">
+          <img src="images/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_learned_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Sheet_metal_on_concrete_+_ceramic_debris_+_cordless_drill_iTDCN++_2.5ms_learned_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 0.77 dB
+          </td>  </tr>
+  </table>
+
+
+  <p><span class="section">Plastic box slide + footsteps on cement + plumbing pipes</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_mix.png" width="300" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_mix.wav"></audio>
+      </td>
+    </tr>
+
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+
+
+        <td align="center">
+          <img src="images/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_src0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_src0.wav"></audio>
+
+        <br />
+          SI-SDR = -7.37 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_src1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_src1.wav"></audio>
+
+        <br />
+          SI-SDR = -2.52 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_src2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_src2.wav"></audio>
+
+        <br />
+          SI-SDR = -0.18 dB
+        </td>  </tr>
+      <tr>
+        <th>Method</th>
+
+        <th>Separated source 0</th>
+
+        <th>Separated source 1</th>
+
+        <th>Separated source 2</th>
+
+    </tr>
+
+      <tr>
+        <td align="center">iTDCN++ 2.5ms STFT</td>
+
+        <td align="center">
+          <img src="images/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_STFT_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_STFT_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = -2.29 dB
+          </td>
+        <td align="center">
+          <img src="images/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_STFT_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_STFT_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 10.49 dB
+          </td>
+        <td align="center">
+          <img src="images/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_STFT_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_STFT_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 5.96 dB
+          </td>
+      <tr>
+        <td align="center">iTDCN++ 2.5ms learned</td>
+
+        <td align="center">
+          <img src="images/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_learned_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_learned_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = -5.72 dB
+          </td>
+        <td align="center">
+          <img src="images/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_learned_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_learned_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 8.07 dB
+          </td>
+        <td align="center">
+          <img src="images/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_learned_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Plastic_box_slide_+_footsteps_on_cement_+_plumbing_pipes_iTDCN++_2.5ms_learned_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 5.21 dB
+          </td>  </tr>
+  </table>
+
+
+  <p><span class="section">Piano + barn door close + cabinet crash</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Piano_+_barn_door_close_+_cabinet_crash_mix.png" width="300" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Piano_+_barn_door_close_+_cabinet_crash_mix.wav"></audio>
+      </td>
+    </tr>
+
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+
+
+        <td align="center">
+          <img src="images/Piano_+_barn_door_close_+_cabinet_crash_src0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_barn_door_close_+_cabinet_crash_src0.wav"></audio>
+
+        <br />
+          SI-SDR = -11.42 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Piano_+_barn_door_close_+_cabinet_crash_src1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_barn_door_close_+_cabinet_crash_src1.wav"></audio>
+
+        <br />
+          SI-SDR = 9.91 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Piano_+_barn_door_close_+_cabinet_crash_src2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_barn_door_close_+_cabinet_crash_src2.wav"></audio>
+
+        <br />
+          SI-SDR = -14.58 dB
+        </td>  </tr>
+      <tr>
+        <th>Method</th>
+
+        <th>Separated source 0</th>
+
+        <th>Separated source 1</th>
+
+        <th>Separated source 2</th>
+
+    </tr>
+
+      <tr>
+        <td align="center">iTDCN++ 2.5ms STFT</td>
+
+        <td align="center">
+          <img src="images/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_STFT_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_STFT_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = -2.36 dB
+          </td>
+        <td align="center">
+          <img src="images/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_STFT_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_STFT_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 8.59 dB
+          </td>
+        <td align="center">
+          <img src="images/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_STFT_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_STFT_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = -8.66 dB
+          </td>
+      <tr>
+        <td align="center">iTDCN++ 2.5ms learned</td>
+
+        <td align="center">
+          <img src="images/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_learned_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_learned_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = -2.34 dB
+          </td>
+        <td align="center">
+          <img src="images/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_learned_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_learned_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 10.27 dB
+          </td>
+        <td align="center">
+          <img src="images/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_learned_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_barn_door_close_+_cabinet_crash_iTDCN++_2.5ms_learned_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = -16.00 dB
+          </td>  </tr>
+  </table>
+
+
+  <p><span class="section">Piano + auto crash + rusty metal squeak</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Piano_+_auto_crash_+_rusty_metal_squeak_mix.png" width="300" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Piano_+_auto_crash_+_rusty_metal_squeak_mix.wav"></audio>
+      </td>
+    </tr>
+
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+
+
+        <td align="center">
+          <img src="images/Piano_+_auto_crash_+_rusty_metal_squeak_src0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_auto_crash_+_rusty_metal_squeak_src0.wav"></audio>
+
+        <br />
+          SI-SDR = -26.11 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Piano_+_auto_crash_+_rusty_metal_squeak_src1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_auto_crash_+_rusty_metal_squeak_src1.wav"></audio>
+
+        <br />
+          SI-SDR = 12.56 dB
+        </td>
+
+        <td align="center">
+          <img src="images/Piano_+_auto_crash_+_rusty_metal_squeak_src2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_auto_crash_+_rusty_metal_squeak_src2.wav"></audio>
+
+        <br />
+          SI-SDR = -12.64 dB
+        </td>  </tr>
+      <tr>
+        <th>Method</th>
+
+        <th>Separated source 0</th>
+
+        <th>Separated source 1</th>
+
+        <th>Separated source 2</th>
+
+    </tr>
+
+      <tr>
+        <td align="center">iTDCN++ 2.5ms STFT</td>
+
+        <td align="center">
+          <img src="images/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_STFT_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_STFT_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = -27.04 dB
+          </td>
+        <td align="center">
+          <img src="images/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_STFT_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_STFT_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 12.13 dB
+          </td>
+        <td align="center">
+          <img src="images/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_STFT_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_STFT_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 2.02 dB
+          </td>
+      <tr>
+        <td align="center">iTDCN++ 2.5ms learned</td>
+
+        <td align="center">
+          <img src="images/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_learned_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_learned_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = -42.45 dB
+          </td>
+        <td align="center">
+          <img src="images/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_learned_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_learned_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 11.65 dB
+          </td>
+        <td align="center">
+          <img src="images/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_learned_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Piano_+_auto_crash_+_rusty_metal_squeak_iTDCN++_2.5ms_learned_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = -4.91 dB
+          </td>  </tr>
+  </table>
+
+
+  <p><span class="section">GPS voice + Roman candle + wood glass crash</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/GPS_voice_+_Roman_candle_+_wood_glass_crash_mix.png" width="300" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/GPS_voice_+_Roman_candle_+_wood_glass_crash_mix.wav"></audio>
+      </td>
+    </tr>
+
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+
+
+        <td align="center">
+          <img src="images/GPS_voice_+_Roman_candle_+_wood_glass_crash_src0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/GPS_voice_+_Roman_candle_+_wood_glass_crash_src0.wav"></audio>
+
+        <br />
+          SI-SDR = -9.50 dB
+        </td>
+
+        <td align="center">
+          <img src="images/GPS_voice_+_Roman_candle_+_wood_glass_crash_src1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/GPS_voice_+_Roman_candle_+_wood_glass_crash_src1.wav"></audio>
+
+        <br />
+          SI-SDR = -12.08 dB
+        </td>
+
+        <td align="center">
+          <img src="images/GPS_voice_+_Roman_candle_+_wood_glass_crash_src2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/GPS_voice_+_Roman_candle_+_wood_glass_crash_src2.wav"></audio>
+
+        <br />
+          SI-SDR = 7.10 dB
+        </td>  </tr>
+      <tr>
+        <th>Method</th>
+
+        <th>Separated source 0</th>
+
+        <th>Separated source 1</th>
+
+        <th>Separated source 2</th>
+
+    </tr>
+
+      <tr>
+        <td align="center">iTDCN++ 2.5ms STFT</td>
+
+        <td align="center">
+          <img src="images/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_STFT_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_STFT_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = -8.51 dB
+          </td>
+        <td align="center">
+          <img src="images/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_STFT_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_STFT_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 2.77 dB
+          </td>
+        <td align="center">
+          <img src="images/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_STFT_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_STFT_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 8.77 dB
+          </td>
+      <tr>
+        <td align="center">iTDCN++ 2.5ms learned</td>
+
+        <td align="center">
+          <img src="images/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_learned_sep0.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_learned_sep0.wav"></audio>
+
+          <br />
+            SI-SDR = -10.17 dB
+          </td>
+        <td align="center">
+          <img src="images/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_learned_sep1.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_learned_sep1.wav"></audio>
+
+          <br />
+            SI-SDR = 2.98 dB
+          </td>
+        <td align="center">
+          <img src="images/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_learned_sep2.png" width="300" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/GPS_voice_+_Roman_candle_+_wood_glass_crash_iTDCN++_2.5ms_learned_sep2.wav"></audio>
+
+          <br />
+            SI-SDR = 8.49 dB
+          </td>  </tr>
+  </table>
+</div>
+</body>
+</html>
