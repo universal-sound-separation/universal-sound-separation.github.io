@@ -1,0 +1,3102 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+  Audio Demos
+  </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <div class="container">
+    <p>&nbsp;</p>
+    <p><span class="title">Two-speaker separation: WSJ0, 4 mics</span></p>
+    <br />
+  
+  <p><span class="section">Example 1</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_1_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_1_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_1_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = -2.00 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_1_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = 1.64 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.19 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.03 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.62 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.50 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.18 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.94 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.35 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.23 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.59 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.49 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.46 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_1_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_1_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.38 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 2</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_2_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_2_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_2_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 2.51 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_2_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -2.62 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 5.50 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 1.50 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 6.79 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 3.37 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 0.70 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = -5.18 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 2.05 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = -3.07 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = -0.17 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = -7.82 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = -0.02 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_2_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_2_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = -7.68 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 3</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_3_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_3_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_3_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 4.47 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_3_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -4.69 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 3.56 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = -8.57 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 2.80 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = -12.93 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.82 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.43 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.69 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.67 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 2.75 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = -5.34 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 3.22 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_3_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_3_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = -4.84 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 4</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_4_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_4_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_4_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 1.34 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_4_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -1.34 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.92 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.54 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.42 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.99 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.10 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.57 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.71 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.25 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.91 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.51 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.47 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_4_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_4_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.94 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 5</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_5_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_5_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_5_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 2.02 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_5_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -2.19 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.43 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.25 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 14.58 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.39 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.89 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.65 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.74 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.52 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = -2.14 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = -6.58 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = -1.79 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_5_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_5_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = -6.12 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 6</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_6_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_6_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_6_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 8.65 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_6_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -8.57 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 16.91 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.09 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 16.64 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.43 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.62 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 6.44 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.87 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 6.52 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.92 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 6.50 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.33 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_6_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_6_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 5.80 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 7</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_7_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_7_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_7_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 5.25 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_7_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -5.29 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.20 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.87 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 14.28 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.63 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.76 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.16 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.45 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.69 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.37 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.76 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.00 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_7_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_7_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.19 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 8</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_8_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_8_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_8_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 0.94 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_8_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -1.09 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.51 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.48 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.73 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.67 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.99 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.89 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.51 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.43 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.05 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.01 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.42 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_8_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_8_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.32 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 9</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_9_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_9_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_9_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 5.70 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_9_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -5.60 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 17.54 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.99 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 16.85 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.96 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 16.67 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.21 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 16.61 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.72 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 17.31 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.40 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 16.28 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_9_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_9_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.33 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 10</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_10_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_10_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_10_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = -0.15 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_10_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = 0.13 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.28 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.13 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.96 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.10 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 5.86 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 6.08 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.61 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.75 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.56 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.63 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.21 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_10_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_10_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.37 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 11</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_11_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_11_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_11_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 0.64 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_11_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -0.71 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.83 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.02 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.97 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.21 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.10 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.39 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.65 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.89 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.34 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.71 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.24 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_11_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_11_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.47 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 12</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_12_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_12_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_12_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 0.23 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_12_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -0.21 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.03 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.73 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.68 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.43 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.42 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.08 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.94 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.70 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.12 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.92 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.78 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_12_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_12_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.54 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 13</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_13_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_13_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_13_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 1.28 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_13_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -1.24 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 19.05 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 17.70 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 17.68 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 16.40 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 16.76 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.67 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 17.00 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.71 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 14.57 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.42 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 14.40 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_13_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_13_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.15 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 14</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_14_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_14_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_14_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 4.19 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_14_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -4.04 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 14.71 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.59 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 14.04 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.63 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.89 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.53 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.60 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.15 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.25 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.75 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.60 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_14_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_14_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.06 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 15</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_15_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_15_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_15_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 3.61 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_15_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -3.71 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.32 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.34 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.79 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.81 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.19 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.18 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.76 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.73 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.79 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.88 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.60 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_15_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_15_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.55 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 16</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_16_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_16_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_16_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 5.85 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_16_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -6.06 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 14.23 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.85 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.50 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 6.95 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.49 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 5.69 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.29 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 5.53 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.92 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 5.16 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.90 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_16_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_16_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 5.14 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 17</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_17_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_17_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_17_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 2.51 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_17_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -2.59 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.29 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.56 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.39 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.59 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.60 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.79 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.87 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.02 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.98 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.18 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.17 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_17_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_17_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.29 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 18</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_18_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_18_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_18_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 7.43 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_18_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -7.79 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 16.75 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.34 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.67 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.61 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.07 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 7.07 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 14.43 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 6.16 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 14.67 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 6.44 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.92 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_18_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_18_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 5.55 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 19</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_19_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_19_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_19_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 3.71 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_19_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -3.77 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.89 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.92 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.45 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.44 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.45 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.48 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.27 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.27 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.53 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.55 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.13 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_19_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_19_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.10 dB
+        </td>  </tr>
+  </table>
+  
+
+  <p><span class="section">Example 20</span></p>
+  <br />
+  <table style="width:100%">
+    <tr>
+      <th align="center">Mixture</th>
+      <td align="center">
+        <img src="images/Example_20_mix.png" width="500" alt=""/>
+        <br />
+        <audio controls style="width: 300px;"><source src="audio/Example_20_mix.wav"></audio>
+      </td>
+    </tr>
+  
+
+      <tr>
+        <th align="center">Ground-truth sources</th>
+    
+
+        <td align="center">
+          <img src="images/Example_20_src0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_src0.wav"></audio>
+      
+      <br />
+        SI-SDR = 2.70 dB
+      </td>
+
+        <td align="center">
+          <img src="images/Example_20_src1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_src1.wav"></audio>
+      
+      <br />
+        SI-SDR = -2.99 dB
+      </td>  </tr>
+      <tr>
+        <th>Method</th>
+      
+        <th>Separated source 0</th>
+      
+        <th>Separated source 1</th>
+      
+    </tr>
+    
+      <tr>
+        <td align="center">TI 64ms x 4 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 15.47 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcfti_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.68 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.95 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcfti_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.96 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, BF2</td>      
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.36 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcfbl_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.49 dB
+        </td>
+      <tr>
+        <td align="center">TI 64ms x 4 frames,<br />block size 3.2s, MN3</td>      
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 13.09 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcfbl_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 10.08 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, BF2</td>      
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 12.49 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcftv_model_iter_1_beamformed_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 9.45 dB
+        </td>
+      <tr>
+        <td align="center">TV 128ms x 2 frames, MN3</td>      
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep0.wav"></audio>
+      
+        <br />
+          SI-SDR = 11.81 dB
+        </td>
+        <td align="center">
+          <img src="images/Example_20_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.png" width="500" alt=""/>
+          <br />
+          <audio controls style="width: 300px;"><source src="audio/Example_20_mixable_wsj0mc_nmic4_eval_mcftv_denoised_waveforms_sep1.wav"></audio>
+      
+        <br />
+          SI-SDR = 8.76 dB
+        </td>  </tr>
+  </table>
+  
+  </div>
+  </body>
+  </html>
