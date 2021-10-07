@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Sparse, Efficient, and Semantic Mixture Invariant Training: Taming In-the-Wild Unsupervised Sound Separation
+</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+  <p>&nbsp;</p>
+  <p><span class="title">Sparse, Efficient, and Semantic Mixture Invariant Training: Taming In-the-Wild Unsupervised Sound Separation</span></p>
+  <table border="0" align="center" class="authors">
+    <tr align="center">
+      <td><a href="https://ai.google/research/people/ScottWisdom">Scott Wisdom</a></td>
+      <td><a href="https://research.google/people/104952/">Aren Jansen</a></td>
+      <td><a href="https://ronw.net/">Ron J. Weiss</a></td> <br> <br>
+      <td><a href="https://research.google/people/106904/">Hakan Erdogan</a></td>
+      <td><a href="https://research.google/people/106072/">John R. Hershey</a></td>
+    </tr>
+  </table>
+  <br />
+  <table border="0" align="center" class="affiliations">
+    <tr>
+      <!--
+      <td align="center"><img src="images/logo_research.png" height="40" alt=""/></td>
+      -->
+      <td align="left"><a href="https://research.google.com/">Google Research</a></td>
+    </tr>
+  </table>
+  <br>
+  <div align="center">
+  <img  src="./images/mixit_improve_scatters.png" alt="Performance scatter plots" width="1000">
+  Scatter plots of multi-source separation SI-SNR improvement (MSi) versus single-source reconstruction SI-SNR (1S) for various losses. Marker size is proportional to the loss weight lambda, and M indicates the number of output sources for the separation model. The M=16 model uses our proposed efficient version of MixIT, which enables scaling beyond M=8 sources.
+  </div>
+  <br />
+  <p><span class="section">Abstract</span></p>
+  <p>Supervised neural network training has led to significant progress on single-channel sound separation. This approach relies on ground truth isolated sources, which precludes scaling to widely available mixture data and limits progress on open-domain tasks. The recent mixture invariant training (MixIT) method enables training on in-the-wild data; however, it suffers from two outstanding problems. First, it produces models which tend to over-separate, producing more output sources than are present in the input. Second, the exponential computational complexity of the MixIT loss limits the number of feasible output sources. In this paper we address both issues. To combat over-separation we introduce new losses: sparsity losses that favor fewer output sources and a covariance loss that discourages correlated outputs. We also experiment with a semantic classifica- tion loss by predicting weak class labels for each mixture. To handle larger numbers of sources, we introduce an efficient approximation using a fast least-squares solution, projected onto the MixIT constraint set. Our experiments show that the proposed losses curtail over-separation and improve overall performance. The best performance is achieved using larger numbers of output sources, enabled by our efficient MixIT loss, combined with sparsity losses to prevent over-separation. On the FUSS test set, we achieve over 13 dB in multi-source SI-SNR improvement, while boosting single-source reconstruction SI-SNR by over 17 dB.<br />
+  </p>
+  <p class="section">&nbsp;</p>
+
+  <p>&nbsp;</p>
+  <p class="section">Paper</p>
+  <table border="0">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td><p>&quot;Sparse, Efficient, and Semantic Mixture Invariant Training: Taming In-the-Wild Unsupervised Sound Separation&quot;,<br />
+            Scott Wisdom, Aren Jansen, Ron J. Weiss, Hakan Erdogan, John R. Hershey,<br />
+            Proc. IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA) 2021.<br />
+            [<a href="https://arxiv.org/pdf/2106.00847.pdf">arXiv preprint</a>]</p>
+        <!-- <p>[<a href="https://arxiv.org/pdf/2011.01143.pdf">PDF</a>]</p> -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <p class="section">Audio Demos</p>
+  <table width="600" height="40" border="0">
+      <!-- <td>[<a href="./supplemental/index.html">Demo index</a>]</td> -->
+      Coming soon.
+  </table>
+  <p align="center" class="date">Last updated: October 2021</p>
+</div>
+</body>
+</html>
